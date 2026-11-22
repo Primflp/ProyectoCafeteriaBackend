@@ -61,8 +61,8 @@ public class MsProductoControllerV2 {
         Producto productoNew = productoService.productoBuscarPorId(id);
 
         if(productoNew != null){
-            productoService.productoActualizar(id, producto);
-            return ResponseEntity.ok(productoNew);
+            Producto productoActualizado = productoService.productoActualizar(id, producto);
+            return ResponseEntity.ok(productoActualizado);
         }else{
             return ResponseEntity.notFound().build();
         }
