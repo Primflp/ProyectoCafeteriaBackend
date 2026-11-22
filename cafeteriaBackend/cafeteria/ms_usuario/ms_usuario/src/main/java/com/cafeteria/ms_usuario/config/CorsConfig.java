@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://rococo-kheer-c90457.netlify.app/", "http://localhost:5173") // Pon tu URL de Netlify y localhost para pruebas
+                        .allowedOrigins("https://rococo-kheer-c90457.netlify.app", "http://localhost:5173") // Pon tu URL de Netlify y localhost para pruebas
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
